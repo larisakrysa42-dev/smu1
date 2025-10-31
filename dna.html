@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>3D Модели Биологии</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 50px; background: #f9f9f9; }
-    h1 { text-align: center; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 10px 0; font-size: 18px; }
-    a { text-decoration: none; color: #1a73e8; }
-    a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <h1>3D Модели Биологии</h1>
-  <ul>
-    <li><a href="anatomyofaflower.html">Anatomy of a Flower</a></li>
-    <li><a href="bacterialcell.html">Bacterial Cell</a></li>
-    <li><a href="chloroplast.html">Chloroplast</a></li>
-    <li><a href="coronavirus.html">Coronavirus</a></li>
-    <li><a href="dna.html">DNA</a></li>
-    <li><a href="lymphatics_of_head_and_neck.html">Lymphatics of Head and Neck</a></li>
-    <li><a href="plantcell.html">Plant Cell</a></li>
-  </ul>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>dna</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <style>
+      body { margin: 0; background: #f9f9f9; }
+      model-viewer { width: 100vw; height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <model-viewer 
+      src="dna.glb"
+      camera-controls
+      auto-rotate
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      environment-image="neutral"
+      alt="3D модель dna">
+    </model-viewer>
+  </body>
 </html>
